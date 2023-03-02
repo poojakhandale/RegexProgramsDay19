@@ -13,6 +13,7 @@ namespace RegularExpression
 
         public class User
         {
+
             public Boolean ValidateName(string firstName)
             {
                 String Pattern = "[A-Z]{1}[a-z]{2,}";
@@ -32,7 +33,7 @@ namespace RegularExpression
             }
             public Boolean validPassWord(string Password)
             {
-                string Pattern = "^(?=.*[A-Z]).{8,}$";
+                string Pattern = "^(?=.*[A-Z])(?=.*\\d).{8,}$";
                 return Regex.IsMatch(Password, Pattern);
             }
         }
