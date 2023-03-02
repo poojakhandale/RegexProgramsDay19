@@ -6,10 +6,10 @@ public class Program
     public static void Main(string[] args)
     {
         User userinfo = new User();
-        Boolean Firstname = userinfo.ValidateFirstName("Kratos");
+        Boolean Firstname = userinfo.ValidateFirstName("Zeus");
         if (Firstname == false)
         {
-            Console.WriteLine("Enter the first name with capitalze and atleast had a 3 character");
+            Console.WriteLine("Enter the Last name with capitalze and atleast had a 3 character");
         }
     }
 }
