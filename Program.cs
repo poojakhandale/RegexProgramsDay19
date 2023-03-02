@@ -6,18 +6,19 @@ public class Program
     public static void Main(string[] args)
     {
         User userinfo = new User();
-        Console.WriteLine("enter your email: ");
-        string email = Console.ReadLine();
-        Boolean value = userinfo.Validatemail(email);
+        Console.WriteLine("enter your number");
+        string num = Console.ReadLine();
+        Boolean value = userinfo.validNumber(num);
 
         if (value)
         {
-            Console.WriteLine("valid email");
+            Console.WriteLine("valid Number");
         }
         else
         {
-            Console.WriteLine("invalid email");
+            Console.WriteLine("invalid Number");
         }
     }
-}
+    }
+
 
