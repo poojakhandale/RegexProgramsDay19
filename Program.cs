@@ -5,22 +5,21 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        {
-            User userinfo = new User();
-            Console.WriteLine("enter your password");
-            string Password = Console.ReadLine();
-            Boolean value = userinfo.validPassWord(Password);
+        User userinfo = new User();
+        Console.WriteLine("enter your password");
+        string Password = Console.ReadLine();
+        Boolean value = userinfo.validPassWord(Password);
 
-            if (value)
-            {
-                Console.WriteLine("valid password");
-            }
-            else
-            {
-                Console.WriteLine("invalid password");
-            }
+        if (value)
+        {
+            Console.WriteLine("valid password");
+        }
+        else
+        {
+            Console.WriteLine("invalid password");
         }
     }
 }
+
 
 
